@@ -1,0 +1,9 @@
+The issue was caused by a conflict between the order of classes and the specificity of Tailwind's utilities.  By reorganizing the classes in the `class` attribute to place more specific classes before less specific ones, and ensuring that the correct order is followed in terms of the Tailwind directives, the conflict was resolved and the classes started applying correctly.
+
+Here's the corrected HTML (`bugSolution.html`):
+
+```html
+<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+  Click Me
+</button>
+```
